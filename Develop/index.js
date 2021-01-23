@@ -32,7 +32,6 @@ const init = () =>
                 message: questions[1],
                 name: 'email',
             },
-            /*
             {
                 type: 'input',
                 message: questions[2],
@@ -43,14 +42,12 @@ const init = () =>
                 message: questions[3],
                 name: 'projectDescription',
             },
-            */
             {
                 type: 'list',
                 message: questions[4],
                 name: 'license',
                 choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
             },
-            /*
             {
                 type: 'input',
                 message: questions[5],
@@ -62,11 +59,10 @@ const init = () =>
                 name: 'tests',
             },
             {
-                type: 'using',
+                type: 'input',
                 message: questions[7],
-                name: 'username',
+                name: 'usage',
             },
-            */
             {
                 type: 'input',
                 message: questions[8],
@@ -74,21 +70,33 @@ const init = () =>
             }
         ])
 
-/*
-What kind of license should your project have?
-MIT
-Apache 2.0
-GPL 3.0
-BSD 3
-None
-*/
-
 
 // Function call to initialize app
 const generateReadMe = (answers) => 
 `# ${answers.projectName}
 
-[Username](#username)
+* [Installation]("#installation)
+
+* [License](#license)
+
+* [Contributing](contributing)
+
+* [Usage](#usage)
+
+* [Tests](#tests)
+
+* [Quesitons](#questions)
+
+<a name="username">
+## Installation
+</a>
+
+
+## Lincense
+
+## Contributing
+
+## Usage
 
 ## Username
 ${answers.username}
