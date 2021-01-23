@@ -20,7 +20,7 @@ const questions = [
 
 // TODO: Create a function to initialize app
 const init = () => 
-    inquirer
+    inquirer //Question prompts
         .prompt([
             {
                 type: 'input',
@@ -71,11 +71,17 @@ const init = () =>
         ])
 
 
-// Function call to initialize app
+// variable of ReadMe file contents
 const generateReadMe = (answers) => 
 `# ${answers.projectName}
 
-* [Installation]("#installation)
+## Description
+
+${answers.projectDescription}
+
+# Table of Contents
+
+* [Installation](#installation)
 
 * [License](#license)
 
@@ -87,23 +93,43 @@ const generateReadMe = (answers) =>
 
 * [Quesitons](#questions)
 
-<a name="installation">
 ## Installation
-</a>
 
+To install necessary dependencies, run the following command:
 
-## Lincense
+''
+${answers.dependencies}
+''
+
+## License
+
+This projects is licensed under the ${answers.license} license
 
 ## Contributing
 
+${answers.contributing}
+
 ## Usage
 
-## Username
-${answers.username}
-${answers.license}
+${answers.usage}
+
+## Tests
+
+To run tests, rund the following command:
+
+''
+${answers.tests}
+''
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me at ${answers.email}.
+You can find more of my work at: [${answers.username}](https://github.com/${answers.username}).
+
 `;
 
+//Generating ReadMe File
 init()
-  .then((answers) => writeFileAsync('READMe.md', generateReadMe(answers)))
+  .then((answers) => writeFileAsync('README.md', generateReadMe(answers)))
 
 
