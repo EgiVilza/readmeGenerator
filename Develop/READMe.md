@@ -12,7 +12,7 @@
 
 * [Quesitons](#questions)
 
-<a name="username">
+<a name="installation">
 ## Installation
 </a>
 
