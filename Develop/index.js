@@ -91,7 +91,7 @@ ${answers.projectDescription}
 
 * [Tests](#tests)
 
-* [Quesitons](#questions)
+* [Questions](#questions)
 
 ## Installation
 
@@ -103,7 +103,7 @@ ${answers.dependencies}
 
 ## License
 
-This projects is licensed under the ${answers.license} license
+This projects is licensed under the ${answers.license} license.
 
 ## Contributing
 

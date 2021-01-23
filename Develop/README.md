@@ -1,8 +1,8 @@
-# Generating a ReadMe File
+# Generate a ReadMe File
 
 ## Description
 
-Generate a ReadMe.me file and filling out the contents, within the file, from answering the questions using the terminal
+Generate a ReadMe.md file and filling out the contents in the file from the questions prompt from the terminal
 
 # Table of Contents
 
@@ -16,7 +16,7 @@ Generate a ReadMe.me file and filling out the contents, within the file, from an
 
 * [Tests](#tests)
 
-* [Questions](#questions)
+* [Quesitons](#questions)
 
 ## Installation
 
@@ -28,7 +28,7 @@ npm i
 
 ## License
 
-This projects is licensed under the BSD 3 license.
+This projects is licensed under the BSD 3 license
 
 ## Contributing
 
